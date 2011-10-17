@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="com.figoyu.easypay.dao.NewsMapper">  
+    <sql id="sqlproperty"> 
+         NewsType, NewsName, NewsContent, PublishDate, IsDated
+    </sql> 
+    <sql id="sqlvalue"> 
+       #{newsType}, #{newsName}, #{newsContent}, #{publishDate}, #{isDated}
+    </sql> 
+          
+    <!-- 查询所有公告信息，对应FilmMapper接口中的findAllNews方法 -->  
+    <select id="findAllNews" resultType="News">  
+        select * from news  
+    </select>  
+    
+    <select id="findNewsByPage" parameterType="Map" resultType="News">  
+        select * from news 
+        <if test="pageId != null and pageSize != null and order != null">
+        	order by ${order} limit ${pageId}, ${pageSize}
+        </if>       
+    </select>
+    
+    <select id="findAllRecord" resultType="Integer">  
+        select count(*) from news  
+    </select>  
+    
+    <select id="findNewsById" parameterType="Integer" resultType="News">  
+    	select * from news where Id=#{id}  
+    </select>
+      
+   
+    <select id="findAllNewsOrder" parameterType="Map" resultType="News">  
+    	select * from news where 11 = 1   
+    <if test="orderKey != null">  
+    	order by ${orderKey}   
+    </if>  
+    </select>       
+    
+    <insert id="insertNews" parameterType="News" keyProperty="id"  
+        useGeneratedKeys="true">  
+        insert into news (<include refid="sqlproperty"/>) values (<include refid="sqlvalue"/>);  
+    </insert>     
+    
+    <update id="updateNews" parameterType="News">  
+        update news set NewsType = #{newsType},
+        	NewsName = #{newsName}, NewsContent = #{newsContent}, PublishDate = #{publishDate},
+        	IsDated = #{isDated} where Id = #{id}  
+    </update>      
+   
+   <!--  
+    <delete id="deleteNews" parameterType="Integer">  
+        delete from news where Id = #{id}  
+    </delete> 
+    -->
+    <delete id="deleteNews" parameterType="List">  
+        delete from news where Id in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+        	#{item}
+        </foreach> 
+    </delete> 
+      
+</mapper>  

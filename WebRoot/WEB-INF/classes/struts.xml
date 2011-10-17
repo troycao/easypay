@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+    <!DOCTYPE struts PUBLIC  
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+        "http://struts.apache.org/dtds/struts-2.0.dtd">  
+      
+    <struts>  
+        <constant name="struts.enable.DynamicMethodInvocation" value="true" />  
+        <constant name="struts.devMode" value="true" />  
+        <constant name="struts.i18n.encoding" value="UTF-8" />  
+        <constant name="struts.objectFactory" value="spring" />  
+        <constant name="struts.objectFactory.spring.autoWire" value="type" />  
+        <constant name="struts.ui.theme" value="simple" />
+        
+        
+        <package name="news" namespace="/news" extends="struts-default">  
+             <!-- 获得所有公告 -->  
+	        <action name="findAllNews" class="newsAction" method="findAllNews">             
+	        </action> 
+	        <action name="getNewsTypes" class="newsAction" method="getNewsTypes">             
+	        </action>
+	        <action name="insertOrUpdateNews" class="newsAction" method="insertOrUpdateNews">             
+	        </action>
+	        <action name="deleteNews" class="newsAction" method="deleteNews">             
+	        </action>
+	         	        
+	        <!-- 跳转到公告管理页面 -->  
+	        <action name="forwardNews" class="newsAction" method="forwardNews">
+	        	<result name="success">/pages/webadmin/news/news.jsp</result>             
+	        </action>
+	        <action name="forwardAddNews" class="newsAction" method="forwardAddNews">
+	        	<result name="success">/pages/webadmin/news/newsAddorEdit.jsp</result>             
+	        </action> 
+	        <action name="forwardEditNews" class="newsAction" method="forwardEditNews">
+	        	<result name="success">/pages/webadmin/news/newsAddorEdit.jsp</result>             
+	        </action>	        
+	        <action name="showNewsDetail" class="newsAction" method="showNewsDetail">
+	        	<result name="success">/pages/webadmin/news/newsDetail.jsp</result>             
+	        </action>	         
+        </package>  
+</struts>  

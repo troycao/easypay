@@ -1,0 +1,378 @@
+* {
+	font-size: 12px;
+	font-family: Tahoma, Verdana, Î¢ÈíÑÅºÚ, ÐÂËÎÌå
+}
+
+body {
+	background: #D2E0F2;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.footer {
+	text-align: center;
+	color: #15428B;
+	margin: 0px;
+	padding: 0px;
+	line-height: 23px;
+	font-weight: bold;
+}
+
+.easyui-accordion ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+}
+
+.easyui-accordion ul li {
+	padding: 0px;
+}
+
+.easyui-accordion ul li div {
+	margin: 1px 0px;
+	padding-left: 10px;
+	padding-top: 1px;
+}
+
+.input_text {
+	font-size:12px;    
+    line-height:20px;
+    height:20px;
+    padding:0px;
+    border: 1px solid #A4BED4;
+}
+
+
+
+/*
+.textbox03 {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,ËÎÌå;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;  font-weight: bold; width: 190px; }
+
+.txt01{font:Verdana, Geneva, sans-serif,ËÎÌå;padding:3px 2px 2px 2px; border-width:1px; border-color:#ddd;  color:#000;}
+.txt {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,ËÎÌå;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;}
+
+
+.head a{color:White;text-decoration:underline;}
+
+.easyui-accordion ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px;
+}
+
+.easyui-accordion ul li {
+	padding: 0px;
+}
+
+.easyui-accordion ul li a {
+	line-height: 24px;
+}
+
+
+
+.easyui-accordion ul li div:hover {
+	border: 1px dashed #99BBE8;
+	background: #E0ECFF;
+	cursor: pointer;
+}
+
+.easyui-accordion ul li div:hover a {
+	color: #F63;
+	text-decoration: none
+}
+
+.easyui-accordion ul li div.selected {
+	border: 1px solid #99BBE8;
+	background: #E0ECFF;
+	cursor: default;
+}
+
+.easyui-accordion ul li div.selected a {
+	color: #416AA3;
+	font-weight: bold;
+}
+
+.icon {
+	background: url(../images/tabicons.png) no-repeat;
+	width: 18px;
+	line-height: 18px;
+	display: inline-block;
+}
+
+.icon-sys {
+	background-position: 0px -200px;
+}
+
+.icon-set {
+	background-position: -380px -200px;
+}
+
+.icon-add {
+	background-position: -20px 0px;
+}
+
+.icon-add1 {
+	background: url('icon/edit_add.png') no-repeat;
+}
+
+.icon-nav {
+	background-position: -100px -20px;
+}
+
+.icon-users {
+	background-position: -100px -480px;
+}
+
+.icon-role {
+	background-position: -360px -200px;
+}
+
+.icon-set {
+	background-position: -380px -200px;
+}
+
+.icon-log {
+	background-position: -380px -80px;
+}
+
+.icon-delete16 {
+	background: url('icon/delete.gif') no-repeat;
+	width: 18px;
+	line-height: 18px;
+	display: inline-block;
+}
+
+.icon-delete {
+	background-position: -140px -120px;
+}
+
+.icon-edit {
+	background-position: -380px -320px;
+}
+
+.icon-magic {
+	background-position: 0px -500px;
+}
+
+.icon-database {
+	background-position: -20px -140px;
+}
+
+.icon-expand {
+	background: url('/images/coll2.gif') no-repeat;
+}
+
+.icon-collapse {
+	background: url('/images/coll3.gif') no-repeat;
+}
+
+
+*/
+
+.business_top_note {
+	border: #e8e8e8 1px solid;	
+}
+
+.business_top_note SPAN {
+	color: #999999;
+	font-size: 12px
+}
+
+.business_userinfo {
+	padding-bottom: 5px;
+	margin: 0px auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	display: block;
+	clear: both;
+	padding-top: 10px
+}
+
+.business_userinfo_left {
+	text-align: left;
+	width: 503px;
+	float: left;
+	height: auto
+}
+
+.business_userinfo_title {
+	text-align: center;
+	width: 105px;
+	font: bold 13px/27px arial;
+	bakcground: url(../images/mug.jpg) no-repeat;
+	height: 24px;
+	color: #fff
+}
+
+.business_userinfo_title_sb {
+	LINE-HEIGHT: 27px;
+	PADDING-LEFT: 10px;
+	WIDTH: auto;
+	FLOAT: left;
+	HEIGHT: 27px
+}
+
+.business_userinfo_box {
+	border: #84b83e 1px solid;	
+	line-height: 10px;
+	padding-left: 10px;
+	width: 473px;
+	display: block;
+	background: url(../images/zhxx_bg.jpg) no-repeat 50% bottom;
+	float: left;
+	heigth: 92px;
+	color: #666;	
+	padding-top: 10px
+}
+
+.business_userinfo_box SPAN {
+	font: bold 12px arial;
+	color: red
+}
+
+.business_userinfo_box B {
+	color: #000;
+	font-weight: normal
+}
+
+.business_userinfo_right {
+	WIDTH: 429px;
+	FLOAT: left;
+	HEIGHT: auto
+}
+
+.business_money_title {
+	LINE-HEIGHT: 29px;
+	WIDTH: 429px;
+	DISPLAY: block;
+	BACKGROUND: url(../images/money_box_title.jpg) no-repeat;
+	FLOAT: left;
+	HEIGHT: 29px
+}
+
+.business_money_title SPAN {
+	TEXT-ALIGN: center;
+	WIDTH: 128px;
+	FONT: bold 13px/ 29px arial;
+	FLOAT: left;
+	HEIGHT: 29px;
+	COLOR: #fff
+}
+
+.business_money_title A {
+	LINE-HEIGHT: 29px;
+	PADDING-LEFT: 10px;
+	WIDTH: 65px;
+	BACKGROUND: url(../images/dot_hei.jpg) no-repeat left 12px;
+	FLOAT: left;
+	MARGIN-LEFT: 15px;
+	OVERFLOW: hidden
+}
+
+.business_money_box {
+	TEXT-ALIGN: left;
+	PADDING-BOTTOM: 0px;
+	LINE-HEIGHT: 30px !important;
+	MARGIN: 0px;
+	PADDING-LEFT: 44px;
+	WIDTH: 385px;
+	PADDING-RIGHT: 0px;
+	DISPLAY: block;
+	BACKGROUND: url(../images/money_box_bg.jpg) no-repeat;
+	FLOAT: left;
+	HEIGHT: 83px;
+	COLOR: #333;
+	OVERFLOW: hidden;
+	PADDING-TOP: 17px
+}
+
+.business_money_box EM {
+	FONT: bold 12px arial;
+	COLOR: red;
+	MARGIN-LEFT: 20px
+}
+
+.business_money_box B {
+	FONT: 12px tohama;
+	COLOR: #000
+}
+
+.business_userinfo2 {
+	padding-bottom: 0px;
+	margin: 0px auto;
+	padding-left: 0px;
+	width: 951px;
+	padding-right: 0px;
+	display: block;
+	clear: both;
+	padding-top: 10px
+}
+
+.business_userinfo_box2 {
+	border-bottom: #b4b4b4 1px solid;
+	border-left: #b4b4b4 1px solid;
+	padding-bottom: 20px;
+	margin: 0px auto;
+	padding-left: 1px;
+	width: 946px;
+	padding-right: 1px;
+	float: left;
+	clear: both;
+	overflow: hidden;
+	border-top: #b4b4b4 1px solid;
+	border-right: #b4b4b4 1px solid;
+	padding-top: 1px
+}
+
+.business_userinfo_box3 {
+	BORDER-BOTTOM: #ccc 1px solid;
+	BORDER-LEFT: #ccc 1px solid;
+	PADDING-BOTTOM: 1px;
+	MARGIN: 0px auto 5px;
+	PADDING-LEFT: 1px;
+	WIDTH: 946px;
+	PADDING-RIGHT: 1px;
+	FLOAT: left;
+	CLEAR: both;
+	OVERFLOW: hidden;
+	BORDER-TOP: #ccc 1px solid;
+	BORDER-RIGHT: #ccc 1px solid;
+	PADDING-TOP: 1px
+}
+
+.business_userinfo_admend_box_left {
+	text-align center;
+	padding-left: 1px;
+	width: 104px;
+	float: left;
+	overflow: hidden
+}
+
+.business_userinfo_admend_box_left IMG {
+	BORDER-BOTTOM: #ccc 1px solid;
+	BORDER-LEFT: #ccc 1px solid;
+	MARGIN: 0px auto;
+	DISPLAY: block;
+	BORDER-TOP: #ccc 1px solid;
+	BORDER-RIGHT: #ccc 1px solid
+}
+
+.business_userinfo_admend_box_left SPAN {
+	TEXT-ALIGN: center;
+	DISPLAY: block;
+	FONT: 12px/17px arial;
+	COLOR: #999;
+	PADDING-TOP: 4px
+}
+
+.business_userinfo_admend_box_left EM {
+	FONT-STYLE: normal;
+	COLOR: red
+}
